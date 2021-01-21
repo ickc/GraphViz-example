@@ -16,7 +16,7 @@ PDFs = $(patsubst %.dot,%.pdf,$(DOTs))
 pdf: $(PDFs)
 
 # %.pdf: %.dot
-	# dot -T pdf $< -o $@
+	# $(DOT) -T pdf $< -o $@
 
 # always convert to xdot first as dot2tex sometimes fail to detect it is in plain dot format
 %.tex: %.dot
